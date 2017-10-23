@@ -197,10 +197,6 @@ footer {
     background-color: $black;
     padding-top: 5em;
     padding-bottom: 1em;
-    background-image: url(../images/App%20icon%20design.png);
-    background-size: 300px;
-    background-repeat: no-repeat;
-    background-position: bottom right;
 
     * {
         color: $white;
@@ -227,11 +223,19 @@ footer {
         text-decoration: none;
         color: $orange;
     }
+
+    .footer-logo {
+        height: 3em;
+    }
+    
+    .footer-title {
+        font-weight: bold;
+        margin: 10px 0 0 0;
+        font-family: $roboto;
+    }
 }
 
-.fp {
-    text-align: right;
-}
+
 
 .form {
     input,
@@ -486,7 +490,7 @@ nav {
     .desktop-d {
         display: none;
     }
-    
+
     .desktop-m {
         display: flex;
     }
@@ -496,8 +500,16 @@ nav {
     .desktop-d {
         display: none;
     }
-    
+
     .desktop-m {
         display: flex;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    #logo {
+        display: block;
+        margin: 0 auto;
+        z-index: -999;
     }
 }
